@@ -1,0 +1,63 @@
+<section class="banner banner-secondary" id="top" style="background-image: url(assets/img/bg.png);">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="banner-caption">
+          <div class="line-dec"></div>
+          <h2>Login</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section class="popular-places">
+    <div class="container">
+      <div class="contact-content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="left-content">
+              <div class="row">
+                <form (ngSubmit)="onSubmit()">
+                  <div class="col-md-6">
+                    <fieldset>
+                      <input name="email" type="text" class="form-control" [(ngModel)]="form.email" placeholder="Email Address..." required>
+                    </fieldset>
+                  </div>
+                  <div class="col-md-6">
+                    <fieldset>
+                      <input type="password" name="password" class="form-control" [(ngModel)]="form.password" placeholder="Password..." required>
+                    </fieldset>
+                  </div>
+                  <div class="col-md-12">
+                    <fieldset>
+                      <div class="blue-button">
+                        <button id="form-submit" type="submit" class="btn btn-block">Login</button>
+                      </div>
+                    </fieldset>
+                  </div>
+                </form>
+                
+                <!-- Error message display -->
+                <div *ngIf="errorMessage" class="alert alert-danger">
+                  {{ errorMessage }}
+                </div>
+
+                <!-- Sign Up button -->
+                <div class="col-md-12" style="margin-top: 15px;">
+                  <fieldset>
+                    <div class="blue-button">
+                      <button (click)="onSignUp()" class="btn btn-block">Sign Up</button>
+                    </div>
+                  </fieldset>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

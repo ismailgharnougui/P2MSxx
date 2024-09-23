@@ -1,0 +1,59 @@
+<div class="wrap">
+  <header id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <button id="primary-nav-button" type="button">Menu</button>
+          <a href="index.html" *ngIf="currentRoute !== '/login' && currentRoute !== '/signup'">
+            <div class="logo">
+              <img src="assets/img/logo.png" alt="Venue Logo" style="width: 100px; height: auto;">
+            </div>
+          </a>
+          <nav id="primary-nav" class="dropdown cf">
+            <ul class="dropdown menu">
+              <!-- Home link should be hidden if on login or signup page -->
+              <li *ngIf="userRole && currentRoute !== '/login' && currentRoute !== '/signup'" routerLink="overview">
+                <a>Home</a>
+              </li>
+
+              <!-- Prediction Dashboard: only for managers -->
+              <li *ngIf="userRole === 'manager'">
+                <a routerLink="prediction" class="nav-link">Prediction Dashboard</a>
+              </li>
+
+              <!-- Client Dashboard: only for clients and managers -->
+              <li *ngIf="userRole === 'client' || userRole === 'manager'">
+                <a routerLink="client" class="nav-link">Client Dashboard</a>
+              </li>
+
+              <!-- Fournisseur Dashboard: only for fournisseurs and managers -->
+              <li *ngIf="userRole === 'fournisseur' || userRole === 'manager'">
+                <a routerLink="fournisseur" class="nav-link">Fournisseur Dashboard</a>
+              </li>
+
+              <!-- Article Dashboard: only for managers -->
+              <li *ngIf="userRole === 'manager'">
+                <a routerLink="article" class="nav-link">Article Dashboard</a>
+              </li>
+
+              <!-- Login option if no user is logged in and on the login page -->
+              <li *ngIf="!userRole && currentRoute === '/login'">
+                <a class="nav-link" routerLink="/">Login</a>
+              </li>
+
+              <!-- Sign Up option if no user is logged in and on the sign-up page -->
+              <li *ngIf="!userRole && currentRoute === '/signup'">
+                <a class="nav-link" routerLink="/signup">Sign Up</a>
+              </li>
+
+              <!-- Logout option if user is logged in -->
+              <li *ngIf="userRole">
+                <a class="nav-link" (click)="onLogout()">Log Out</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>

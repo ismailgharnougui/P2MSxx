@@ -1,0 +1,89 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>cubeOLAP</Database>
+    <Server>localhost</Server>
+    <ConnectionString>DataSource=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>xRvA457rqMSc49Ac7jSWYBR+8Do=12/09/2024 13:08:4212/09/2024 13:08:42</TimeStamp>
+        <ID>
+          <String>p2ms DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>TwZkdSbbOvq44+WKO4SttEo37Xg=12/09/2024 13:08:5412/09/2024 13:08:54</TimeStamp>
+        <ID>
+          <String>p2ms DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>BkTMSIwSRbp1K1UjBvRugcM0GcU=12/09/2024 13:09:3212/09/2024 13:09:22</TimeStamp>
+        <ID>
+          <String>Dim Article</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>LKCHXcGA5RcnAH9o0dv/wVNSlW8=12/09/2024 13:10:1512/09/2024 13:09:22</TimeStamp>
+        <ID>
+          <String>Dim Client</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>HsnPYjwF1Wr3+SCPR/AyNhuKn6o=12/09/2024 13:10:1512/09/2024 13:09:22</TimeStamp>
+        <ID>
+          <String>Dim Fournisseur</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>VFlQNpmT/4Go/RUNtcaGI2YuAKI=12/09/2024 13:17:5612/09/2024 13:09:22</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0Mls8Ij80pPfe3j+D5O/brtdQGA=12/09/2024 13:11:1512/09/2024 13:09:22</TimeStamp>
+        <ID>
+          <String>Dim Region</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>pm0m9/vhnt3jx4fJitd1w/VkoC0=12/09/2024 14:03:5612/09/2024 13:09:22yY/w6rWFIv5W9ET8S3+Zfa6YukM=12/09/2024 13:09:2212/09/2024 13:09:22</TimeStamp>
+        <ID>
+          <String>p2ms DW</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>s29Wbr44aM4nJ1lN96hb010wwPA=28/07/2024 14:32:3928/07/2024 14:32:39</TimeStamp>
+      <ID>
+        <String>cubeOLAP</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-09-12T13:04:16.486667Z</LastDeployed>
+</DeploymentSnapshot>

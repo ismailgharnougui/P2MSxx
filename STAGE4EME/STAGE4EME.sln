@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "STAGE4EME", "STAGE4EME\STAGE4EME.dtproj", "{00F32B4B-062C-4B0D-943A-7288C0B08FFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00F32B4B-062C-4B0D-943A-7288C0B08FFC}.Development|Default.ActiveCfg = Development
+		{00F32B4B-062C-4B0D-943A-7288C0B08FFC}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

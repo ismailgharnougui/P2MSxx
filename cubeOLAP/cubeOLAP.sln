@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "cubeOLAP", "cubeOLAP\cubeOLAP.dwproj", "{81F461B5-56F5-46B0-A3D4-B37CD5628164}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81F461B5-56F5-46B0-A3D4-B37CD5628164}.Development|Default.ActiveCfg = Development
+		{81F461B5-56F5-46B0-A3D4-B37CD5628164}.Development|Default.Build.0 = Development
+		{81F461B5-56F5-46B0-A3D4-B37CD5628164}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

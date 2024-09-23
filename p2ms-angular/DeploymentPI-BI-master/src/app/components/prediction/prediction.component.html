@@ -1,0 +1,37 @@
+<section class="banner banner-secondary" id="top" style="background-image: url(assets/img/bg.png);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="banner-caption">
+            <div class="line-dec"></div>
+            <h2>Prediction</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <main>
+    <section class="popular-places">
+      <div class="container">
+        <!-- Form for Start Month and End Month Inputs -->
+        <form (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="start-month">Start Month:</label>
+            <input type="number" id="start-month" class="form-control" min="1" max="12" [(ngModel)]="startMonth" name="startMonth" required>
+          </div>
+          <div class="form-group">
+            <label for="end-month">End Month:</label>
+            <input type="number" id="end-month" class="form-control" min="1" max="12" [(ngModel)]="endMonth" name="endMonth" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Get Prediction</button>
+        </form>
+  
+        <!-- Chart Container -->
+        <div class="chart-container" style="position: relative; height: 40vh; width: 80vw;">
+          <canvas id="prediction-chart"></canvas>
+        </div>
+      </div>
+    </section>
+  </main>
+  
